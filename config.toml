@@ -1,0 +1,40 @@
+baseURL = "https://snavens.github.io/My_Website/"
+# include content marked as draft
+buildDrafts = false
+# include content with publishdate in the future
+buildFuture = false
+# include content already expired
+buildExpired = false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+themeDir = "themes"
+publishDir = "docs"
+relativeURLs = true
+disableRSS = true
+enableRobotsTXT = true
+editor = "nano"
+languageCode = "en"
+language = "en"
+theme = "vncnt-hugo"
+title = "Evans Ng'eno · My Website"
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
+[permalinks]
+  fixed = ":title/"
+  posts = "posts/:slug/"
+
+[params]
+  author = "Evans Ng'eno"
+  email = "evansngeno21@gmail.com"
+  description = "My_Website"
+  avatar = "img/avatar.jpg"
+  favicon = "img/favicon.ico"
+  error404 = "There is no such page."
+
+  [params.contact]
+    github = "https://github.com/Snavens"
+    instagram = "https://instagram.com/apparently_evans"
+    twitter = "https://twitter.com/EvansN21?s=08"
+    telegram = "https://t.me/predatore21"
+    whatsapp = "http://wa.me/+254727897736"
